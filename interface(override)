@@ -1,0 +1,17 @@
+public interface i {
+    void fun();
+    void fun2();
+}
+
+public interface i1 extends i{}
+
+public class test implements i{
+    @Override
+    public void fun() {
+
+    }
+    @Override
+    public void fun2(){
+
+    }
+}
