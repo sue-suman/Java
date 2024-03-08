@@ -1,0 +1,17 @@
+void fun(){
+        int[] arr={32,87,3,589,1076,2000,8,622,127};
+        int find=12;
+        for(int i=0;i<arr.length;i++){
+            if(i==5){
+                System.out.println("*");
+                continue;
+            }
+            else{
+                System.out.println(arr[i]);
+            }
+        }
+    }
+	public static void main(String[] args) {
+		Main obj=new Main();
+		obj.fun();
+	}
