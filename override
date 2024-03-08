@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Testing implements client{
+    String name,salary;
+    @Override
+    public void input(){
+        Scanner sc=new Scanner(System.in);
+        name=sc.nextLine();
+        salary=sc.nextLine();
+    }
+    @Override
+    public void output(){
+        System.out.println(name);
+        System.out.println(salary);
+    }
+}public interface client {
+    void input();
+    void output();
+}
+
+public class Main {
+    public static void main(String[] args) {
+        client obj3=new Testing();
+        obj3.input();
+        obj3.output();
+    }
+}
